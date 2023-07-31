@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Travel Agent - RevoU Course</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav class="navbar" id="navbar">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li><a id="home" class="nav-link" href="#header">Home</a></li>
+                    <li><a id="package" class="nav-link" href="#package-section">Our Package</a></li>
+                    <li><a id="call-us" class="nav-link" href="#content">Call Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section id="header">
+            <div class="container">
+                <h1 class="title">Your Trusted Travel Agent's</h1>
+                <span class="subtitle">Your happiness is our happiness</span>
+            </div>
+        </section>
+
+        <section id="content">
+            <div class="container">
+                <div class="top-section row">
+                    <div class="left">
+                        <div class="slider-container">
+                            <div class="slider">
+                                <img id="img-1" src="images/jakarta.jpg" alt="Image 1"/>
+                                <img id="img-2" src="images/jepang.jpg" alt="Image 2"/>
+                                <img id="img-3" src="images/paris.jpg" alt="Image 3"/>
+                            </div>
+                            <div class="navigation-button">
+                                <span class="dot active" onclick="changeSlide(0)"></span>
+                                <span class="dot" onclick="changeSlide(1)"></span>
+                                <span class="dot" onclick="changeSlide(2)"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div id="contact-us">
+                            <h3 class="title">Contact Us</h3>
+                            <span class="subtitle">Sales akan menghubungi anda 1x24 jam setelah data kami terima.</span>
+                            <form id="contact-form">
+                                <label for="name">Your Name:</label>
+                                <input type="text" name="name" id="name" placeholder="First name and last name">
+
+                                <label for="email">Email Address:</label>
+                                <input type="email" name="email" id="email" placeholder="example@email.com">
+
+                                <label for="message">Message:</label>
+                                <textarea name="message" cols="30" rows="5" placeholder="Your message"></textarea>
+
+                                <input type="submit" value="SEND">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="package-section">
+            <div class="header">
+                <h1>Our Package</h1>
+            </div>
+            <div class="container">
+                <div id="packages">
+                    <div class="row">
+                        <div class="col">
+                            <div class="package-item">
+                                <h3 class="title">Bali</h3>
+                                <span class="subtitle">Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik.</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="package-item">
+                                <h3 class="title">Japan</h3>
+                                <span class="subtitle">Travel dan wisata di Japan. Kunjungi cagar budaya dan kuliner yang menarik.</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="package-item">
+                                <h3 class="title">Singapore</h3>
+                                <span class="subtitle">Travel dan wisata di Singapore. Kunjungi cagar budaya dan kuliner yang menarik.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 50px">
+                        <div class="col">
+                            <div class="package-item">
+                                <h3 class="title">Paris</h3>
+                                <span class="subtitle">Travel dan wisata di Paris. Kunjungi cagar budaya dan kuliner yang menarik.</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="package-item">
+                                <h3 class="title">London</h3>
+                                <span class="subtitle">Travel dan wisata di London. Kunjungi cagar budaya dan kuliner yang menarik.</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="package-item">
+                                <h3 class="title">Korea</h3>
+                                <span class="subtitle">Travel dan wisata di Korea. Kunjungi cagar budaya dan kuliner yang menarik.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bottom">
+            <div class="header">
+                <h1 class="title">Making Your Travel Easy</h1>
+                <span class="subtitle">Untuk setiap liburan, perjalanan bisnis, bulan madu, perjalanan keluarga, atau bahkan perjalanan solo, kami akan memastikan Anda memiliki produk perjalanan terbaik di dunia hanya dengan sekali klik! Dapatkan momen Anda, di mana saja.</span>
+            </div>
+        </section>
+
+        <section id="footer" class="footer">
+            <p>Copyright &copy;2023 - All Right Reserved</p>
+        </section>
+    </body>
+    <script src="js/script.js"></script>
+</html>
