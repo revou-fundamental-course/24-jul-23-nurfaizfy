@@ -22,3 +22,32 @@ function changeSlide(n) {
     imgs[currentImg].style.opacity = 1;
     dots[currentImg].className += ' active';
 }
+
+/* Toggle mobile navigation */
+function toggleNavbar() {
+  var x = document.getElementById("navbar");
+    /*if (x.className === "navbar") {
+      x.className += " responsive";
+    } else {
+      x.className = "navbar";
+    }*/
+    if (x.classList.contains("responsive")) {
+      x.classList.remove("responsive");
+    } else {
+      x.classList.add("responsive");
+    }
+}
+
+/* Sticky navigation */
+window.onscroll = function() {stickyNavbar()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function stickyNavbar() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}

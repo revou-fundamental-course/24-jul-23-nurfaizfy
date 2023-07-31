@@ -3,20 +3,26 @@
     <head>
         <title>Travel Agent - RevoU Course</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="images/logo.png">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <nav class="navbar" id="navbar">
             <div class="container">
-                <ul class="nav-menu">
-                    <li><a id="home" class="nav-link" href="#header">Home</a></li>
-                    <li><a id="package" class="nav-link" href="#package-section">Our Package</a></li>
-                    <li><a id="call-us" class="nav-link" href="#content">Call Us</a></li>
+                <img src="images/logo-landscape.png" alt="Logo" class="logo">
+                <ul>
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#package-section">Our Package</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
                 </ul>
             </div>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+                <i class="fa fa-bars"></i>
+            </a>
         </nav>
 
-        <section id="header">
+        <section id="top">
             <div class="container">
                 <h1 class="title">Your Trusted Travel Agent's</h1>
                 <span class="subtitle">Your happiness is our happiness</span>
@@ -89,7 +95,7 @@
                         </div>
                     </div>
 
-                    <div class="row" style="margin-top: 50px">
+                    <div class="row">
                         <div class="col">
                             <div class="package-item">
                                 <h3 class="title">Paris</h3>
