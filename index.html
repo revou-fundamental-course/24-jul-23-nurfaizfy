@@ -50,18 +50,23 @@
                         <div id="contact-us">
                             <h3 class="title">Contact Us</h3>
                             <span class="subtitle">Sales akan menghubungi anda 1x24 jam setelah data kami terima.</span>
-                            <form id="contact-form">
+                            <form id="contact-form" method="post" onsubmit="return validateForm()">
                                 <label for="name">Your Name:</label>
-                                <input type="text" name="name" id="name" placeholder="First name and last name">
+                                <input type="text" name="name" id="name-field" placeholder="First name and last name">
 
                                 <label for="email">Email Address:</label>
-                                <input type="email" name="email" id="email" placeholder="example@email.com">
+                                <input type="email" name="email" id="email-field" placeholder="example@email.com">
 
                                 <label for="message">Message:</label>
-                                <textarea name="message" cols="30" rows="5" placeholder="Your message"></textarea>
-
+                                <textarea name="message" cols="30" rows="5" id="message-field" placeholder="Your message"></textarea>
+                                
+                                <small class="error-text" id="error-text"></small>
+                                
                                 <input type="submit" value="SEND">
                             </form>
+                            <div id="message-send" style="display: none;">
+                                <h4>Kami telah menerima pesan anda.</h4>
+                            </div>
                         </div>
                     </div>
                 </div>

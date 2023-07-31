@@ -26,11 +26,6 @@ function changeSlide(n) {
 /* Toggle mobile navigation */
 function toggleNavbar() {
   var x = document.getElementById("navbar");
-    /*if (x.className === "navbar") {
-      x.className += " responsive";
-    } else {
-      x.className = "navbar";
-    }*/
     if (x.classList.contains("responsive")) {
       x.classList.remove("responsive");
     } else {
@@ -50,4 +45,40 @@ function stickyNavbar() {
   } else {
     navbar.classList.remove("sticky");
   }
+}
+
+/* Form validation */
+function validateForm() {
+  var err = document.getElementById("error-text");
+  err.innerHTML = "";
+  err.style.display = "none";
+
+  var name = document.getElementById("name-field").value;
+  var email = document.getElementById("email-field").value;
+  var msg = document.getElementById("message-field").value;
+
+  console.log({name});
+
+  if (name == "") {
+    err.innerHTML = "Nama tidak boleh kosong";
+    err.style.display = "block";
+    return false;
+  }
+
+  if (email == "") {
+    err.innerHTML = "Email tidak boleh kosong";
+    err.style.display = "block";
+    return false;
+  }
+
+  if (msg == "") {
+    err.innerHTML = "Pesan tidak boleh kosong";
+    err.style.display = "block";
+    return false;
+  }
+
+  document.getElementById("contact-form").style.display = "none";
+  document.getElementById("message-send").style.display = "block";
+
+  return false;
 }

@@ -279,7 +279,12 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
+}
+
+small.error-text {
+    color: red;
+    display: none;
+}
 
 #package-section .header {
     background-color: #ced1e2;
