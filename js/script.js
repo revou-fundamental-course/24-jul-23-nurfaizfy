@@ -57,8 +57,6 @@ function validateForm() {
   var email = document.getElementById("email-field").value;
   var msg = document.getElementById("message-field").value;
 
-  console.log({name});
-
   if (name == "") {
     err.innerHTML = "*Nama tidak boleh kosong";
     err.style.display = "block";

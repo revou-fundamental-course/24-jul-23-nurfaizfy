@@ -68,22 +68,21 @@ body {
 }
 
 .navbar {
-    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
     background-color: #eeeeee;
     box-shadow: 0px 0.1px #333;
-    padding: 10px 0px 10px 0px;
-    z-index: 999;
-    width: 100%;
 }
 
-@media screen and (min-width: 600px) {
-    .navbar.sticky {
-        position: fixed;
-        top: 0;
-    }
-    .navbar.sticky + #top {
-        padding-top: 100px;
-    }
+.navbar > .container {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .navbar .logo {
@@ -261,13 +260,77 @@ body {
     background-color: #717171;
 }
 
+.testimonial-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.testimonial-container .header {
+    text-align: center;
+}
+
+.testimonial-container h1 {
+    font-size: 30px;
+}
+
+.testimonial-container .subtitle {
+    color: #8d8d8d;
+    font-size: 20px;
+}
+
+.testimonial {
+    margin-top: 30px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .testimonial {
+        margin-top: 30px;
+        width: 100%;
+    }
+}
+
+.testimonial .testimonial-item {
+    border-radius: 5px;
+    min-height: 350px;
+    width: 100%;
+    padding: 30px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    margin: 10px 0;
+    position: relative;
+}
+
+.testimonial-item .testimonial-text {
+    line-height: 30px;
+    color: #8d8d8d;
+    display: inline-block;
+}
+
+.testi-bottom {
+    position: absolute;
+    bottom: 20px;
+}
+
+.testi-bottom .testi-by {
+    margin-top: 30px;
+    color: #8d8d8d;
+}
+
+.testi-bottom .testi-name {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .feature-container {
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
 .feature-container h1 {
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .feature-container .feature-item {
@@ -294,6 +357,7 @@ body {
 .feature-item .subtitle {
     margin-top: 20px;
     display: inline-block;
+    color: #353535;
 }
 
 #contact-us {
@@ -336,7 +400,7 @@ small.error-text {
     display: none;
 }
 
-#package-section .header {
+#package .header {
     background-color: #ced1e2;
     padding: 70px 0 70px 0;
     text-align: center;
@@ -386,6 +450,20 @@ small.error-text {
 #bottom .subtitle {
     color: #353535;
     font-size: 18px;
+    display: inline-block;
+}
+
+#bottom span a {
+    background-color: #212529;
+    color: white;
+    padding: 14px 50px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
 }
 
 .footer {
