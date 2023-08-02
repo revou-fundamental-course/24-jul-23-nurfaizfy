@@ -37,10 +37,10 @@ function toggleNavbar() {
 window.onscroll = function() {stickyNavbar()};
 
 var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+var sticky = navbar.offsetTop + 0.1;
 
 function stickyNavbar() {
-  if (window.pageYOffset >= sticky) {
+  if (window.scrollY >= sticky) {
     navbar.classList.add("sticky")
   } else {
     navbar.classList.remove("sticky");
@@ -60,19 +60,19 @@ function validateForm() {
   console.log({name});
 
   if (name == "") {
-    err.innerHTML = "Nama tidak boleh kosong";
+    err.innerHTML = "*Nama tidak boleh kosong";
     err.style.display = "block";
     return false;
   }
 
   if (email == "") {
-    err.innerHTML = "Email tidak boleh kosong";
+    err.innerHTML = "*Email tidak boleh kosong";
     err.style.display = "block";
     return false;
   }
 
-  if (msg == "") {
-    err.innerHTML = "Pesan tidak boleh kosong";
+  if (msg.length < 10) {
+    err.innerHTML = "*Pesan berisi minimal 10 huruf";
     err.style.display = "block";
     return false;
   }

@@ -8,19 +8,21 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <nav class="navbar" id="navbar">
-            <div class="container">
-                <img src="images/logo-landscape.png" alt="Logo" class="logo">
-                <ul>
-                    <li><a href="#top">Home</a></li>
-                    <li><a href="#package-section">Our Package</a></li>
-                    <li><a href="#contact-us">Contact Us</a></li>
-                </ul>
-            </div>
-            <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </nav>
+        <section id="home">
+            <nav class="navbar" id="navbar">
+                <div class="container">
+                    <img src="images/logo-landscape.png" alt="Logo" class="logo">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Our Package</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </section>
 
         <section id="top">
             <div class="container">
@@ -51,13 +53,13 @@
                             <h3 class="title">Contact Us</h3>
                             <span class="subtitle">Sales akan menghubungi anda 1x24 jam setelah data kami terima.</span>
                             <form id="contact-form" method="post" onsubmit="return validateForm()">
-                                <label for="name">Your Name:</label>
+                                <label for="name-field">Your Name:</label>
                                 <input type="text" name="name" id="name-field" placeholder="First name and last name">
 
-                                <label for="email">Email Address:</label>
+                                <label for="email-field">Email Address:</label>
                                 <input type="email" name="email" id="email-field" placeholder="example@email.com">
 
-                                <label for="message">Message:</label>
+                                <label for="message-field">Message:</label>
                                 <textarea name="message" cols="30" rows="5" id="message-field" placeholder="Your message"></textarea>
                                 
                                 <small class="error-text" id="error-text"></small>
@@ -66,6 +68,40 @@
                             </form>
                             <div id="message-send" style="display: none;">
                                 <h4>Kami telah menerima pesan anda.</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-container">
+                    <h1>Mengapa memilih kami</h1>
+                    <div class="row">
+                        <div class="col">
+                            <div class="feature-item">
+                                <h2>#1</h2>
+                                <span class="title">Kualitas Pelayanan</span>
+                                <span class="subtitle">Kerja keras serta pelayanan dengan sepenuh hati merupakan dedikasi kami untuk memberikan kualitas terbaik bagi Anda</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="feature-item">
+                                <h2>#2</h2>
+                                <span class="title">Terbaik</span>
+                                <span class="subtitle">Menawarkan produk perjalanan yang lengkap dan terbaik untuk mewujudkan pengalaman perjalanan yang tak terlupakan</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="feature-item">
+                                <h2>#3</h2>
+                                <span class="title">Mudah dan Efisien</span>
+                                <span class="subtitle">Dengan teknologi yang terintegritas, kami memberikan akses kemudahan pelayanan perjalanan Anda yang didukung dengan harga efisien</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="feature-item">
+                                <h2>#4</h2>
+                                <span class="title">Berpengalaman</span>
+                                <span class="subtitle">Sejak tahun 2000 kami selalu ada sebagai mitra dan sahabat Anda menuju destinasi yang luar biasa</span>
                             </div>
                         </div>
                     </div>
@@ -83,19 +119,19 @@
                         <div class="col">
                             <div class="package-item">
                                 <h3 class="title">Bali</h3>
-                                <span class="subtitle">Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik.</span>
+                                <span class="subtitle">Dari berjemur di hamparan pasir halus dan perairan yang jernih, perjalanan menyegarkan ke pura, hingga beragam petualangan bersantap.</span>
                             </div>
                         </div>
                         <div class="col">
                             <div class="package-item">
-                                <h3 class="title">Japan</h3>
-                                <span class="subtitle">Travel dan wisata di Japan. Kunjungi cagar budaya dan kuliner yang menarik.</span>
+                                <h3 class="title">Tokyo</h3>
+                                <span class="subtitle">Mulai dari landmark ikonis, taman yang indah hingga jalan yang ramai dan kehidupan malamnya yang meriah. Selalu ada sesuatu yang baru dan menarik untuk ditemukan di Tokyo.</span>
                             </div>
                         </div>
                         <div class="col">
                             <div class="package-item">
                                 <h3 class="title">Singapore</h3>
-                                <span class="subtitle">Travel dan wisata di Singapore. Kunjungi cagar budaya dan kuliner yang menarik.</span>
+                                <span class="subtitle">Jelajahi pemandangan menawan sambil memanjakan diri dengan berbelanja barang mewah, mencicipi beragam makanan lezat penuh cita rasa dari seluruh Asia.</span>
                             </div>
                         </div>
                     </div>
@@ -104,19 +140,19 @@
                         <div class="col">
                             <div class="package-item">
                                 <h3 class="title">Paris</h3>
-                                <span class="subtitle">Travel dan wisata di Paris. Kunjungi cagar budaya dan kuliner yang menarik.</span>
+                                <span class="subtitle">Mulai hidangan tak terlupakan, pemandangan tak tergantikan, dan budaya tak terkalahkan... Bersiaplah jatuh hati dengan Kota Cinta ini lewat mode, kuliner, seni, dan arsitektur yang tidak tertandingi.</span>
                             </div>
                         </div>
                         <div class="col">
                             <div class="package-item">
                                 <h3 class="title">London</h3>
-                                <span class="subtitle">Travel dan wisata di London. Kunjungi cagar budaya dan kuliner yang menarik.</span>
+                                <span class="subtitle">Dari lokasi ikonis, pub dan restoran lokal, serta pertunjukan musikal yang menakjubkan... Jelajahi ribuan permata lokal, dan nikmati pengalaman bak bangsawan di pusat kota London.</span>
                             </div>
                         </div>
                         <div class="col">
                             <div class="package-item">
-                                <h3 class="title">Korea</h3>
-                                <span class="subtitle">Travel dan wisata di Korea. Kunjungi cagar budaya dan kuliner yang menarik.</span>
+                                <h3 class="title">Seoul</h3>
+                                <span class="subtitle">Resapi semua hal tentang Korea di kota semarak ini yang menawarkan petualangan hebat dengan budayanya yang modern beserta budaya dan sejarahnya.</span>
                             </div>
                         </div>
                     </div>
